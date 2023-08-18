@@ -13,9 +13,9 @@ According to the DB-Engines ranking, Elasticsearch is the most popular enterpris
 ## Key Topics
 The Projects divided into:
 * 16G
-  * Docker file
+  * docker compose file
   * .....
   
 * 64G
-  * Docker file
+  * docker compose file
   * .....
