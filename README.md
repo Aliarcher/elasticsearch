@@ -1,6 +1,8 @@
 # Elasticsearch
 ![Elasticsearch GIF](https://github.com/Aliarcher/elasticsearch/assets/53465519/039caafe-c6af-4ae5-bffd-238b0f50fe77)
+
 This repository necessary files for deploying ElasticsSeach
+
 ## Overview
 Elasticsearch is a search engine based on the Lucene library.
 It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents.
