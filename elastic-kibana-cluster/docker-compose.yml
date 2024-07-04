@@ -2,7 +2,7 @@ version: "2.2"
 
 services:
   setup:
-    image: docker.elastic.co/elasticsearch/elasticsearch:${STACK_VERSION}
+    image: docker.arvancloud.ir/docker.elastic.co/elasticsearch/elasticsearch:${STACK_VERSION}
     container_name: setup
     volumes:
       - certs:/usr/share/elasticsearch/config/certs
@@ -72,7 +72,7 @@ services:
     depends_on:
       setup:
         condition: service_healthy
-    image: docker.elastic.co/elasticsearch/elasticsearch:${STACK_VERSION}
+    image: docker.arvancloud.ir/docker.elastic.co/elasticsearch/elasticsearch:${STACK_VERSION}
     container_name: es01
     volumes:
       - certs:/usr/share/elasticsearch/config/certs
@@ -120,7 +120,7 @@ services:
   es02:
     depends_on:
       - es01
-    image: docker.elastic.co/elasticsearch/elasticsearch:${STACK_VERSION}
+    image: docker.arvancloud.ir/docker.elastic.co/elasticsearch/elasticsearch:${STACK_VERSION}
     container_name: es02
     volumes:
       - certs:/usr/share/elasticsearch/config/certs
@@ -165,7 +165,7 @@ services:
   es03:
     depends_on:
       - es02
-    image: docker.elastic.co/elasticsearch/elasticsearch:${STACK_VERSION}
+    image: docker.arvancloud.ir/docker.elastic.co/elasticsearch/elasticsearch:${STACK_VERSION}
     container_name: es03
     volumes:
       - certs:/usr/share/elasticsearch/config/certs
@@ -215,7 +215,7 @@ services:
         condition: service_healthy
       es03:
         condition: service_healthy
-    image: docker.elastic.co/kibana/kibana:${STACK_VERSION}
+    image: docker.arvancloud.ir/docker.elastic.co/kibana/kibana:${STACK_VERSION}
     container_name: kibana
     volumes:
       - certs:/usr/share/kibana/config/certs
